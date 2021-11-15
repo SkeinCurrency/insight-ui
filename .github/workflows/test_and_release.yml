@@ -16,9 +16,9 @@ jobs:
     runs-on: ubuntu-20.04
     timeout-minutes: 10
     steps:
-#       - uses: actions/checkout@v2
-#         with:
-#           persist-credentials: false
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
       - uses: actions/setup-node@v2
         with:
