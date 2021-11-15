@@ -23,7 +23,7 @@ msgstr "404 Page introuvable :("
 #: public/views/index.html
 msgid ""
 "<strong>insight</strong>  is an <a href=\"http://live.insight.is/\" target=\"_blank"
-"\">open-source Dash blockchain explorer</a> with complete REST and websocket APIs "
+"\">open-source SkeinCurrency blockchain explorer</a> with complete REST and websocket APIs "
 "that can be used for writing web wallets and other apps  that need more advanced "
 "blockchain queries than provided by dashd RPC.  Check out the <a href=\"https://"
 "github.com/dashpay/insight-ui-dash\" target=\"_blank\">source code</a>."
@@ -32,7 +32,7 @@ msgstr ""
 "\">explorateur open-source de blocs</a> avec un ensemble complet d'API REST et "
 "websockets qui peuvent être utilisées pour écrire portefeuille et autres "
 "applications nécéssitant des requêtes plus complète que celles proposés par les "
-"commandes RPC de dashd. Consultez le <a href=\"http://github.com/dashevo/insight-ui\" "
+"commandes RPC de dashd. Consultez le <a href=\"http://github.com/skeincurrency/insight-ui\" "
 "target=\"_blank\">code source sur GitHub</a>."
 
 #: public/views/index.html
@@ -66,7 +66,7 @@ msgid "Best Block"
 msgstr "Meilleur Bloc"
 
 #: public/views/status.html
-msgid "Dash node information"
+msgid "SkeinCurrency node information"
 msgstr "Information sur le noeud Dash"
 
 #: public/views/block.html

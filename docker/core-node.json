@@ -3,8 +3,8 @@
   "port": 3001,
   "services": [
     "dashd",
-    "@dashevo/insight-api",
-    "@dashevo/insight-ui",
+    "@skeincurrency/insight-api",
+    "@skeincurrency/insight-ui",
     "web"
   ],
   "servicesConfig": {

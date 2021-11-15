@@ -1,8 +1,9 @@
 {
-  "name": "@dashevo/insight-ui",
-  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the Dash network and build your own services with it.",
-  "version": "3.1.2",
-  "repository": "git://github.com/dashevo/insight-ui.git",
+  "name": "@skeincurrency/insight-ui",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the SkeinCurrency network and build your own services with it.",
+  "version": "3.1.1",
+  "repository": "git://github.com/skeincurrency/insight-ui.git",
+  "engines" : { "node" : ">=14.12" },
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -30,9 +31,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/dashevo/insight-ui/issues"
+    "url": "https://github.com/skeincurrency/insight-ui/issues"
   },
-  "homepage": "https://github.com/dashevo/insight-ui",
+  "homepage": "https://github.com/skeincurrency/insight-ui",
   "license": "MIT",
   "keywords": [
     "insight",
@@ -43,7 +44,7 @@
     "front-end",
     "dashcore"
   ],
-  "dashcoreNode": "dashcore-node",
+  "dashcoreNode": "core-node",
   "scripts": {
     "build": "bower install && grunt compile",
     "watch": "grunt",
@@ -52,7 +53,6 @@
     "test": "webdriver-manager update && (webdriver-manager start > webdriver.log 2>&1 &) && sleep 30 && protractor ./test/e2e/conf.js",
     "prepublishOnly": "npm run build"
   },
-  "dependencies": {},
   "devDependencies": {
     "@dashevo/dp-services-ctl": "^0.14.0",
     "bower": "~1.8.8",

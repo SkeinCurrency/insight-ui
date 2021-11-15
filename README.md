@@ -1,29 +1,29 @@
 # Insight UI
 
-A Dash blockchain explorer web application service for [Dashcore Node](https://github.com/dashevo/dashcore-node) using [Insight API](https://github.com/dashevo/insight-api).
+A SkeinCurrency blockchain explorer web application service for [Сore Node](https://github.com/skeincurrency/core-node) using [Insight API](https://github.com/skeincurrency/insight-api).
 
 ## Quick Start
 
-Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io/guides/full-node) for information about getting a block explorer running. This is only the front-end component of the block explorer, and is packaged together with all of the necessary components in [Dashcore](https://github.com/dashevo/dashcore).
+Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io/guides/full-node) for information about getting a block explorer running. This is only the front-end component of the block explorer, and is packaged together with all of the necessary components in [Сore Node](https://github.com/skeincurrency/core-node).
 
 ## Getting Started
 
 To manually install all of the necessary components, you can run these commands:
 
 ```bash
-npm install -g @dashevo/dashcore-node
-dashcore-node create mynode
+npm install -g @skeincurrency/core-node
+core-node create mynode
 cd mynode
-dashcore-node install @dashevo/insight-api
-dashcore-node install @dashevo/insight-ui
-dashcore-node start
+core-node install @skeincurrency/insight-api
+core-node install @skeincurrency/insight-ui
+core-node start
 ```
 
 Open a web browser to `http://localhost:3001/insight/`
 
 ## Development
 
-To run Insight UI Dash locally in development mode:
+To run Insight UI SkeinCurrency locally in development mode:
 
 Install dependencies:
 
@@ -45,7 +45,7 @@ $ npm run watch
 
 ## Multilanguage support
 
-Insight UI Dash uses [angular-gettext](http://angular-gettext.rocketeer.be) for multilanguage support.
+Insight UI SkeinCurrency uses [angular-gettext](http://angular-gettext.rocketeer.be) for multilanguage support.
 
 To enable a text to be translated, add the ***translate*** directive to html tags. See more details [here](http://angular-gettext.rocketeer.be/dev-guide/annotate/). Then, run:
 
@@ -70,11 +70,11 @@ compile***.
 
 ## Note
 
-For more details about the [Insight API](https://github.com/dashevo/insight-api) configuration and end-points, go to [Insight API GitHub repository](https://github.com/dashevo/insight-api).
+For more details about the [Insight API](https://github.com/skeincurrency/insight-api) configuration and end-points, go to [Insight API GitHub repository](https://github.com/skeincurrency/insight-api).
 
 ## Contribute
 
-Contributions and suggestions are welcomed at the [Insight UI Dash GitHub repository](https://github.com/dashevo/insight-ui).
+Contributions and suggestions are welcomed at the [Insight UI SkeinCurrency GitHub repository](https://github.com/skeincurrency/insight-ui).
 
 
 ## License
