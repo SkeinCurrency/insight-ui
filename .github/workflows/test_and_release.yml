@@ -16,9 +16,12 @@ jobs:
     runs-on: ubuntu-20.04
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v2
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.0
         with:
-          persist-credentials: false
+          access_token: ${{ github.token }}
+
+      - uses: actions/checkout@v2
 
       - uses: actions/setup-node@v2
         with:
@@ -28,9 +31,12 @@ jobs:
         uses: actions/cache@v2
         with:
           path: '~/.npm'
-          key: ${{ runner.os }}-node-1-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
+      - name: Check NPM package lock version is updated
+        uses: dashevo/gh-action-check-package-lock@v1
 
       - name: Install NPM dependencies
         run: npm install -g npm && npm ci
@@ -80,4 +86,3 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
           tag: ${{ steps.tag.outputs.result }}
-
